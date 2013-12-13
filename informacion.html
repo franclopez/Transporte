@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Menu | Metro Medellin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+  <link href="css/codiqa.ext.min.css" rel="stylesheet">
+  <link href="css/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet">
+  <link href="css/estilo_metro.css" rel="stylesheet">
+  <link href="css/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet">
+  <link href="css/metro-medellin.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/codiqa.ext.min.js"></script>
+  <script src="js/kinvey-phonegap-1.1.2.min.js"></script>
+  <script src="js/metro-medellin.js"></script>
+  <script src="apis/notification.js"></script>
+ 
+
+</head>
+<body>
+  <div data-role="page" data-control-title="Informacion" data-theme="a" id="Informacion">
+      <div data-theme="a" data-role="header">
+          <span class="ui-title">
+          </span>
+          <a data-role="button" data-transition="slide" data-theme="a" href="menu.html" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+              atrás
+          </a>
+      </div>
+      <div data-role="content" style="padding: 25px">
+          <div id="txtBienvenida" data-controltype="textblock" class="textCentral">
+          </div>
+          <div style=" text-align:center" data-controltype="image">
+              <img style="width: 220px; height: 101px" src="img/logo.jpg"/>
+          </div>
+          
+          <hr style="height:1px; background-color:#fff; border:0; margin-top:12px; margin-bottom:12px;"/>
+          <a data-role="button" data-theme="a" href="informacion_estaciones.html" target="_blank" data-icon="grid" data-iconpos="left">
+              Como llegar a una estación
+          </a>
+          <a data-role="button" data-theme="a" href="informacion_informacion_tarifa.html" data-icon="plus" data-iconpos="left">
+              Tarifas Metro
+          </a>
+          <a data-role="button" data-theme="a" href="informacion_mapa.html" data-icon="search" data-iconpos="left">
+              Mapa del sistema
+          </a>
+      </div>
+  </div>
+</body>
+</html>

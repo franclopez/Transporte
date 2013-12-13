@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Recarga_BANCOLOMBIA | Metro Medellin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+  <link href="css/codiqa.ext.min.css" rel="stylesheet">
+  <link href="css/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet">
+  <link href="css/estilo_metro.css" rel="stylesheet">
+  <link href="css/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet">
+  <link href="css/metro-medellin.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/codiqa.ext.min.js"></script>
+  <script src="js/kinvey-phonegap-1.1.2.min.js"></script>
+  <script src="js/metro-medellin.js"></script>
+  <script src="apis/notification.js"></script>
+ 
+</head>
+<body>
+  <div data-role="page" data-control-title="Recarga_BANCOLOMBIA" data-theme="a" id="Recarga_BANCOLOMBIA">
+      <div data-theme="a" data-role="header">
+          <h2>
+              Recarga
+          </h2>
+          <a data-role="button" data-transition="slide" data-theme="a" href="menu.html" data-icon="delete" data-iconpos="left" class="ui-btn-left">
+              Cancelar
+          </a>
+      </div>
+      <div data-role="content" style="padding: 25px">
+          <div style="display: inline" data-controltype="image">
+              <img style="width: 51px; height: 51px" src="img/icon-pse.png"/>
+          </div>
+          <div style="display: inline" data-controltype="image">
+              <img style="width: 176px; height: 51px" src="img/logo-grupo-bancolombia.png"/>
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput">
+              <label for="textinput9">
+                  Nro. de Civica
+              </label>
+              <input name="" id="textinput9" placeholder="" value="0008028117" type="text" data-mini="true"/>
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput">
+              <label for="textinput12">
+                  Usuario Bancolombia
+              </label>
+              <input name="" id="textinput12" placeholder="" value="smesa" type="text" data-mini="true"/>
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput">
+              <label for="textinput14">
+                  Clave sucursal
+              </label>
+              <input name="" id="textinput14" placeholder="" value="1234" type="password" data-mini="true"/>
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput">
+              <label for="textinput15">
+                  Segunda clave
+              </label>
+              <input name="" id="textinput15" placeholder="" value="1234" type="password" data-mini="true"/>
+          </div>
+          <a data-role="button" href="menu.html">
+              Pagar
+          </a>
+      </div>
+  </div>
+</body>
+</html>

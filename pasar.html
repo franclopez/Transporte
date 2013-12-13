@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pasar | Metro Medellin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+  <link href="css/codiqa.ext.min.css" rel="stylesheet">
+  <link href="css/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet">
+  <link href="css/estilo_metro.css" rel="stylesheet">
+  <link href="css/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet">
+  <link href="css/metro-medellin.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/codiqa.ext.min.js"></script>
+  <script src="js/kinvey-phonegap-1.1.2.min.js"></script>
+  <script src="js/metro-medellin.js"></script>
+  <script src="apis/notification.js"></script>
+ 
+</head>
+<body>
+  <div data-role="page" data-control-title="Pasar" data-theme="a" id="Pasar">
+      <div data-theme="a" data-role="header">
+          <h2>
+              Saldo
+          </h2>
+          <a data-role="button" data-transition="slide" data-theme="a" href="menu.html" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+              atrás
+          </a>
+      </div>
+      <div data-role="content" style="padding: 25px">
+          <div style=" text-align:center" data-controltype="image">
+              <img style="width: 222px; height: 101px" src="img/logo.jpg"/>
+          </div>
+          <div data-role="collapsible-set">
+              <div data-role="collapsible" data-collapsed="false">
+                  <h3>
+                      Pasar saldo
+                  </h3>
+                  <form action="">
+                      <div data-role="fieldcontain" data-controltype="textinput">
+                          <label for="txtSaldoPasa">
+                              Saldo actual
+                          </label>
+                          <input name="txtSaldoPasa" id="txtSaldoPasa" placeholder="" value="" type="text" data-mini="true"/>
+                      </div>
+                      <div data-role="fieldcontain" data-controltype="selectmenu">
+                          <label for="cmbMetodoTranfer">
+                              Metodo de tranferencia
+                          </label>
+                          <select id="cmbMetodoTranfer" name="cmbMetodoTranfer" data-mini="true">
+                              <option value="1">
+                                  Móvil a Móvil
+                              </option>
+                              <option value="2">
+                                  Móvil a Tarjeta Cívica
+                              </option>
+                          </select>
+                      </div>
+                      <div data-role="fieldcontain" data-controltype="textinput">
+                          <label for="txtNroTarjetaPasa">
+                              Ingrese nro de tarjeta destino
+                          </label>
+                          <input name="txtNroTarjetaPasa" id="txtNroTarjetaPasa" placeholder="" value="" type="text" data-mini="true"/>
+                      </div>
+                      <div data-role="fieldcontain" data-controltype="textinput">
+                          <label for="textinput11">
+                              Ingrese saldo a tranferir
+                          </label>
+                          <input name="" id="textinput11" placeholder="" value="" type="number" data-mini="true"/>
+                      </div>
+                      <a id="btnPasarSaldo" data-role="button" data-theme="a" onclick= "btnPasarOnClick()">
+                          Pasar saldo
+                      </a>
+                  </form>
+              </div>
+              <div data-role="collapsible">
+                  <h3>
+                      Recibir saldo
+                  </h3>
+                  <div data-controltype="textblock">
+                      <p style="text-align: center;" data-mce-style="text-align: center;">
+                          <strong>
+                              Codigo receptor QR
+                          </strong>
+                          <span id="_mce_caret" data-mce-bogus="true" style="">
+                              <strong>
+                                  ﻿
+                              </strong>
+                          </span>
+                      </p>
+                  </div>
+                  <div style=" text-align:center" data-controltype="image">
+                      <img style="width: 150px; height: 150px" src="img/descarga.jpeg"/>
+                  </div>
+                  <div data-controltype="textblock">
+                      <p style="text-align: center;" data-mce-style="text-align: center;">
+                          <span style="color: rgb(255, 0, 0);" data-mce-style="color: #ff0000;">
+                              <b>
+                                  0008028117
+                              </b>
+                          </span>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

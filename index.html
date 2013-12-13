@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Logon | Metro Medellin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="css/codiqa.ext.min.css" rel="stylesheet">
+  <link href="css/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet">
+  <link href="css/estilo_metro.css" rel="stylesheet">
+  <link href="css/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet">
+  <link href="css/metro-medellin.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/codiqa.ext.min.js"></script>
+  <script src="js/kinvey-phonegap-1.1.2.min.js"></script>
+  <script src="js/metro-medellin.js"></script>
+  <script src="apis/notification.js"></script>
+ 
+  <!--script src="phonegap.js"></script>-->
+</head>
+<body>
+  <div data-role="page" data-control-title="Logon" data-theme="a" id="Logon">
+      <div data-theme="a" data-role="header">
+          <span class="ui-title">
+          </span>
+      </div>
+      <div data-role="content">
+          <div style=" text-align:center" data-controltype="image">
+              <img style="width: 220px; height: 101px" src="img/logo.jpg"/>
+          </div>
+          <form id="formLogin" action="">
+              <div data-role="fieldcontain" data-controltype="textinput">
+                  <label for="txtUserName">
+                      Cédula de usuario
+                  </label>
+                  <input name="txtUserName" id="txtUserName" placeholder="Ingrese cedula" value="8028117" type="text"/>
+              </div>
+              <div data-role="fieldcontain" data-controltype="textinput">
+                  <label for="txtPassword">
+                      Contraseña
+                  </label>
+                  <input name="txtPassword" id="txtPassword" placeholder="Ingrese contraseña" value="123456" type="password"/>
+              </div>
+              <input id="btnIngresar" type="submit" data-theme="a" value="Ingresar"/>
+          </form>
+          <div data-controltype="htmlblock">
+              <div id="txtMensaje" data-controltype="textblok" class="warning">
+              </div>
+          </div>
+          <div data-controltype="textblock">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span style="font-size: small;">
+                      <strong>
+                          ﻿Derechos reservado 2013, Metro de Medellín
+                      </strong>
+                  </span>
+                  <br/>
+              </p>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

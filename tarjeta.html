@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta | Metro Medellin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+  <link href="css/codiqa.ext.min.css" rel="stylesheet">
+  <link href="css/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet">
+  <link href="css/estilo_metro.css" rel="stylesheet">
+  <link href="css/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet">
+  <link href="css/metro-medellin.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/codiqa.ext.min.js"></script>
+  <script src="js/kinvey-phonegap-1.1.2.min.js"></script>
+  <script src="js/metro-medellin.js"></script>
+  <script src="apis/notification.js"></script>
+ 
+</head>
+<body>
+  <div data-role="page" data-control-title="Tarjeta" data-theme="a" id="Tarjeta">
+      <div data-theme="a" data-role="header">
+          <h2>
+              Tarjeta
+          </h2>
+          <a data-role="button" data-transition="slide" data-theme="a" href="menu.html" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+              atrás
+          </a>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span style="color: rgb(33, 180, 66); font-family: arial, helvetica, sans-serif; font-size: large;">
+                      <b>
+                          Valor tiquete
+                      </b>
+                  </span>
+              </p>
+          </div>
+          <div id="txtValorTiquete" data-controltype="textblock">
+              <p>
+                  <b>
+                      <br/>
+                  </b>
+              </p>
+          </div>
+          <div data-role="fieldcontain" data-controltype="selectmenu">
+              <select id="cmbMedioPago" name="cmbMedioPago" data-mini="true">
+                  <option value="0">
+                      Seleccione medio
+                  </option>
+                  <option value="2">
+                      NFC
+                  </option>
+                  <option value="1">
+                      Código QR
+                  </option>
+              </select>
+          </div>
+          <div data-controltype="htmlblock">
+              <div id="btnPress" class="botonRedon">
+                  <p>
+                      <br style="line-height:80px;"/>
+                      Presione
+                      <br/>
+                      Aquí
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div data-theme="a" data-role="footer" data-position="fixed">
+          <div id="txtSaldoUser" data-controltype="textblock">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <b style="font-size: medium;" data-mce-style="font-size: medium;">
+                      <span style="font-size: large;" data-mce-style="font-size: large;">
+                          <br/>
+                      </span>
+                  </b>
+              </p>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
